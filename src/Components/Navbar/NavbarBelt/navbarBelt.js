@@ -6,15 +6,20 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SearchIcon from '@mui/icons-material/Search';
 import india from '../../../Assests/india.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
+import { useSelector,useDispatch } from 'react-redux';
 
-const navbarBelt = () => {
-  return (
+const NavbarBelt = () => {
+
+  const cartItems = useSelector((state) => state.cart.items);
+
+    return (
     <div className='navbarBelt'>
         <div className='leftnavBelt'>
-           <div className='leftnavBeltLogo' >
+           <Link to={'/'} className='leftnavBeltLogo' >
            <img className='amazonLogoNavbar' src={amazonLogo} alt='amazonLogo' />
            <span className='navbar_inLogo'>.in</span>
-           </div>
+           </Link>
            <div className="navbarBeltLocation">
             <div className="navbarBeltLocationImg">
               < LocationOnIcon className='navbarBeltLocationImgIcon' sx ={{fontSize: "22px"}} />
@@ -51,10 +56,10 @@ const navbarBelt = () => {
             <div className="helloTopNavbarBelt">Returns</div>
             <div className="indiaCodeNavbarBelt">& Orders</div>
           </div>
-          <div className="helloSignInNavbarBelt">
-            <span className="cartItemNumberNavbarBelt">2</span>
+          <Link to ={'/cart'} className="helloSignInNavbarBelt">
+            <span className="cartItemNumberNavbarBelt">{cartItems.length}</span>
             <div className="helloTopNavbarBelt"><ShoppingCartIcon /><span className='cartTitle'>Cart</span></div>
-          </div>
+          </Link >
           
         </div>
 
@@ -62,4 +67,4 @@ const navbarBelt = () => {
   )
 }
 
-export default navbarBelt
+export default NavbarBelt

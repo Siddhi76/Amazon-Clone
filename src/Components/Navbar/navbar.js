@@ -8,8 +8,11 @@ const navbar = () => {
     <div>
         <NavbarBelt />
         <NavbarBanner />
+        
     </div>
   )
 }
 
 export default navbar
+
+

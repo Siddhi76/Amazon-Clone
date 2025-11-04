@@ -1,0 +1,63 @@
+
+.allpage
+{
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  z-index: 999;       
+}
+
+
+.left
+{
+  width: 28vw;
+  height: 100vh;
+  background-color: white;
+  overflow-y: auto; 
+}
+
+.navbar
+{
+    background-color: rgb(5, 5, 23);
+    height: 60px;
+}
+
+.navbarEmoji
+{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 23px;
+}
+
+.navbarfont
+{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right
+{
+  width: 72vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;  
+}

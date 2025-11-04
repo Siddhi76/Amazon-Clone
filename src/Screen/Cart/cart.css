@@ -1,0 +1,165 @@
+.cart
+{
+    background-color: whitesmoke;
+    padding: 20px 18px 18px;
+    display: flex;
+    gap:10px;
+}
+
+.topLeftCart
+{
+    padding: 20px 15px 15px;
+    box-sizing: border-box;
+    width:77%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.topLeftCartTitle
+{
+    font-size: 28px;
+}
+.deselectAllCart
+{
+    color: #007185;
+}
+
+.cartPriceTextDivider
+{
+    text-align: end;
+}
+
+.cartItemDiv
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.cartItemBlock
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.cartItemLeftBlock
+{
+    display: flex;
+    width: 80%;
+}
+
+.cartItemLeftBlockImage
+{
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.cartItemLeftBlockImg
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cartItemLeftBlockDetails
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap:7px;
+}
+
+.cartItemProductName
+{
+    font-size: 18px;
+}
+
+.inStockCart
+{
+    display: flex;
+    color: #007600;
+    font-size: 12px;
+}
+
+.elgFreeShp
+{
+    color: #565959;
+    font-size: 12px;
+    display: flex;
+}
+
+.amazonfulfilledImage
+{
+    width: 66px;
+}
+
+.fulfilling
+{
+    width: 100%;
+}
+
+.removeFromCart
+{
+    display: flex;
+    width: fit-content;
+    background-color: #febd69;
+    color: black;
+    padding:5px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cardItemRightBlock
+{
+    font-size:18px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.topRightCart
+{
+    padding: 20px 15px 15px;
+    box-sizing: border-box;
+    width: 23%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+}
+
+.subTotalTitle
+{
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subTotalTitleSpan
+{
+    display: flex;
+    font-weight: 700;
+}
+
+.giftAudio
+{
+    display: flex;
+    margin: 10px 0;
+}
+
+.proceedToBuy
+{
+    background-color: #febd69;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+}
+
